@@ -30,8 +30,8 @@ my_url = 'https://socpa.maps.arcgis.com/apps/opsdashboard/index.html#/7bd218bc8b
 
 
 options = webdriver.ChromeOptions()
-options.add_argument('headless')
-driver = webdriver.Chrome(ChromeDriverManager().install(),options=options)
+options.headless = True
+driver = webdriver.Chrome(options=options)
 
 driver.implicitly_wait(10) # seconds
 
