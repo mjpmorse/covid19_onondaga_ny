@@ -69,7 +69,8 @@ df_today = pd.DataFrame(todays_cases.values(),index=todays_cases.keys())
 df_today.rename(columns={0:last_update},inplace=True)
 
 
-# In[151]:
+# close the webdriver_manager
+driver.quit()
 
 
 ## Load the time series
