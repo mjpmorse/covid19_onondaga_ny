@@ -36,12 +36,12 @@ first_case_cty = ds_cty.iloc[0]
 first_case_muni = ds_municipality.iloc[0]
 
 ## two day doubling
-two_day_double_cty =  [first_case_cty, first_case_cty * (2)**((len(ds_cty)//2))]
-two_day_double_muni = [first_case_muni, first_case_muni * (2)**(len(ds_municipality)//2)]
+two_day_double_cty =  [first_case_cty, first_case_cty * (2)**((len(ds_cty)/2))]
+two_day_double_muni = [first_case_muni, first_case_muni * (2)**(len(ds_municipality)/2)]
 
 ## three day doubling
-three_day_double_cty = [first_case_cty, first_case_cty * (2)**((len(ds_cty)//3))]
-three_day_double_muni =  [first_case_muni, first_case_muni * (2)**(len(ds_municipality)//3)]
+three_day_double_cty = [first_case_cty, first_case_cty * (2)**((len(ds_cty)/3))]
+three_day_double_muni =  [first_case_muni, first_case_muni * (2)**(len(ds_municipality)/3)]
 
 ## First and last date of reporting
 first_last_day_cty = [ds_cty.index[0],ds_cty.index[-1]]
