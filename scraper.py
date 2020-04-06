@@ -51,7 +51,11 @@ todays_cases = {}
 for element in p_elements:
     split = element.text.split(":")
     municipalities = split[0].strip()
-    cases = int(split[1].strip())
+
+    # Update 04/06. Onondaga changed dashboard. New line to make code work again.
+    cases = split[1].strip().split(" ")[0]
+
+    cases = int(cases)
     todays_cases[municipalities] = cases
 
 
